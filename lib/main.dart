@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:seeq_business/components/buttons.dart';
 
-import 'utils/constants.dart';
+import 'screens/events.dart';
+import 'screens/events/event_setup.dart';
+import 'screens/main_menu.dart';
+import 'screens/onBoarding_page.dart';
+import 'screens/login.dart';
+import 'screens/profile_setup.dart';
+import 'screens/sms_verification.dart';
 
 void main() {
   runApp(const SeeqBusiness());
@@ -12,73 +17,22 @@ class SeeqBusiness extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    debugShowCheckedModeBanner:
-    false;
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Seeq Partner',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       initialRoute: OnBoardingPage.route,
       routes: {
         OnBoardingPage.route: (context) => OnBoardingPage(),
-        //TODO: Setup the routes here
+        Login.route: (context) => Login(),
+        MainMenu.route: (context) => MainMenu(),
+        VerifySMS.route: (context) => VerifySMS(),
+        Events.route: (context) => Events(),
+        EventSetup.route: (context) => EventSetup(),
+        ProfileSetup.route: (context) => ProfileSetup()
       },
-    );
-  }
-}
-
-class OnBoardingPage extends StatefulWidget {
-  static const String route = '/on_boarding';
-
-  @override
-  State<OnBoardingPage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<OnBoardingPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: kPrimaryColor,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            const SizedBox(height: 10),
-            const Image(
-              image: AssetImage('images/Brandmark.png'),
-            ),
-            Spacer(),
-            RoundButton(
-                onTap: () {
-                  //TODO: Navigate to cinema
-                },
-                color: kWhiteColor,
-                textColor: kPrimaryColor,
-                title: 'Cinema Manager'),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0),
-              child: OutlinedButton(
-                onPressed: () {
-                  //TODO: Navigate to event organizer
-                },
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: const Text(
-                    'Event Organizer',
-                    style: TextStyle(color: kWhiteColor),
-                  ),
-                ),
-                style: OutlinedButton.styleFrom(
-                  primary: kWhiteColor,
-                  side: const BorderSide(color: kWhiteColor),
-                ),
-              ),
-            )
-          ],
-        ),
-      ),
     );
   }
 }

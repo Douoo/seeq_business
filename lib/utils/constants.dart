@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
 const Color kPrimaryColor = Color(0xFF222831);
-const Color kSecondaryColor = Color(0xFF393E46);
-const Color kYellowColor = Color(0xFFFF5722);
+// const Color kSecondaryColor = Color(0xFF393E46);
+const Color kSecondaryColor = Color(0xFFFF5722);
 const Color kWhiteColor = Color(0xFFFFFFFF);
 const Color kGreyColor = Color(0xFFEEEEEE);
 const Color kBlackColor = Color(0xFF000000);
 const Color kTextFormFieldBorderColor = Colors.grey;
 const Color kFocusedTextFormFieldBorderColor = Color(0xFF878787);
-
 
 const kSettingTitleTextStyle = TextStyle(
     fontWeight: FontWeight.bold, fontSize: 18, fontFamily: 'Roboto-Regular');
