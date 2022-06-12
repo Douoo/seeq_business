@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010993312029",
+    "project_id": "seeq-event-booking-app",
+    "storage_bucket": "seeq-event-booking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010993312029:android:cdaad16a9bb1af8f52f1f4",
+        "android_client_info": {
+          "package_name": "com.seeq.business.seeq_business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010993312029-58q5h6tqvuo58oq0ukgkea7gtqi8c0gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu1ebLvGlY52ha7RA2HloLs-AEyUbZfVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010993312029-58q5h6tqvuo58oq0ukgkea7gtqi8c0gj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
